@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PersonasDetailsResponse
+	xmlns="http://in28minutes.com/personas"
+	xsi:schemaLocation="http://in28minutes.com/personas personas-details.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<PersonasDetail>
+		<idPersona>123</idPersona>
+		<nombres>Adalid</nombres>
+		<paterno>Callejas</paterno>
+		<materno>Vega</materno>
+		<fechaNacimiento>21/09/1983</fechaNacimiento>
+		<direccion>Sopocachi Av 6 de Agosto</direccion>
+		<telefono>73591373</telefono>
+		<sexo>M</sexo>
+		<estadoCivil>S</estadoCivil>
+		<salario>10756.8</salario>
+		<activo>true</activo>
+	</PersonasDetail>
+</PersonasDetailsResponse>

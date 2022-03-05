@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://in28minutes.com/personas"
+	xmlns:tns="http://in28minutes.com/personas"
+	elementFormDefault="qualified">
+
+	<xs:element name="PersonasFindByIdRequest">		
+        <xs:complexType>
+			<xs:sequence>
+				<xs:element name="idPersona" type="xs:int" />
+			</xs:sequence>
+		</xs:complexType>
+    </xs:element>
+	
+	<xs:element name="PersonasFindByIdResponse">		
+        <xs:complexType>
+			<xs:sequence>
+				<xs:element name="PersonaDetails" type="tns:PersonaDetails" />
+			</xs:sequence>
+		</xs:complexType>
+    </xs:element>
+    
+    
+    <xs:complexType name="PersonaDetails">
+	    <xs:sequence>
+	    	<xs:element name="idPersona" type="xs:int"/>
+	    	<xs:element name="nombres" type="xs:string"/>
+	    	<xs:element name="paterno" type="xs:string"/>
+	    	<xs:element name="materno" type="xs:string"/>
+	    	<xs:element name="fechaNacimiento" type="xs:dateTime" minOccurs="0"  />
+	    	<xs:element name="direccion" type="xs:string"/>
+	    	<xs:element name="telefono" type="xs:string"/>	    	
+	    	<xs:element name="sexo" type="tns:sexo"/>
+	    	<xs:element name="estadoCivil" type="tns:estadoCivil"/>
+	    	<xs:element name="salario" type="xs:decimal"/>
+	    	<xs:element name="activo" type="xs:boolean"/>	    	
+	    </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="sexo">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="M" />
+			<xs:enumeration value="F" />			
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="estadoCivil">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="C" />
+			<xs:enumeration value="S" />
+			<xs:enumeration value="V" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<!-- xs:complexType name="fechaNacimiento">
+        <xs:simpleContent>
+             <extension base="xs:date"/>
+        </xs:simpleContent>
+    </xs:complexType-->
+	
+		
+</xs:schema>

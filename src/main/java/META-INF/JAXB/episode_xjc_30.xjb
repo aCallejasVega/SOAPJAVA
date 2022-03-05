@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2022.03.03 a las 03:22:29 PM BOT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://in28minutes.com/curses">
+    <schemaBindings map="false">
+      <package name="com.in28minutes.curses"/>
+    </schemaBindings>
+    <bindings scd="tns:GetCourseDetailsRequest">
+      <class ref="com.in28minutes.curses.GetCourseDetailsRequest"/>
+    </bindings>
+    <bindings scd="tns:GetCourseDetailsResponse">
+      <class ref="com.in28minutes.curses.GetCourseDetailsResponse"/>
+    </bindings>
+    <bindings scd="~tns:CourseDetails">
+      <class ref="com.in28minutes.curses.CourseDetails"/>
+    </bindings>
+    <bindings scd="tns:GetAllCourseDetailsRequest">
+      <class ref="com.in28minutes.curses.GetAllCourseDetailsRequest"/>
+    </bindings>
+    <bindings scd="tns:GetAllCourseDetailsResponse">
+      <class ref="com.in28minutes.curses.GetAllCourseDetailsResponse"/>
+    </bindings>
+    <bindings scd="tns:DeleteCourseDetailsRequest">
+      <class ref="com.in28minutes.curses.DeleteCourseDetailsRequest"/>
+    </bindings>
+    <bindings scd="tns:DeleteCourseDetailsResponse">
+      <class ref="com.in28minutes.curses.DeleteCourseDetailsResponse"/>
+    </bindings>
+    <bindings scd="~tns:status">
+      <typesafeEnumClass ref="com.in28minutes.curses.Status"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="http://in28minutes.com/personas">
+    <schemaBindings map="false">
+      <package name="com.in28minutes.personas"/>
+    </schemaBindings>
+    <bindings scd="tns:PersonasDetailsRequest">
+      <class ref="com.in28minutes.personas.PersonasDetailsRequest"/>
+    </bindings>
+    <bindings scd="tns:PersonasDetailsResponse">
+      <class ref="com.in28minutes.personas.PersonasDetailsResponse"/>
+    </bindings>
+    <bindings scd="~tns:PersonaDetails">
+      <class ref="com.in28minutes.personas.PersonaDetails"/>
+    </bindings>
+    <bindings scd="~tns:sexo">
+      <typesafeEnumClass ref="com.in28minutes.personas.Sexo"/>
+    </bindings>
+    <bindings scd="~tns:estadoCivil">
+      <typesafeEnumClass ref="com.in28minutes.personas.EstadoCivil"/>
+    </bindings>
+  </bindings>
+</bindings>
+

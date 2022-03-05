@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PersonasDetailsRequest
+	xmlns="http://in28minutes.com/personas"
+	xsi:schemaLocation="http://in28minutes.com/personas personas-details.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<idPersona>13</idPersona>
+</PersonasDetailsRequest>
